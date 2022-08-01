@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hugo.ribeiro/AndroidStudioProjects/SoccerNews/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hugo.ribeiro/AndroidStudioProjects/SoccerNews/app/src/main/res/layout/fragment_favorites.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hugo.ribeiro/AndroidStudioProjects/SoccerNews/app/src/main/res/layout/fragment_news.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hugo.ribeiro/AndroidStudioProjects/SoccerNews/app/src/main/res/layout/news_item.xml" value="0.5" />
+        <entry key="..\:/Users/hugo.ribeiro/AndroidStudioProjects/SoccerNews/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

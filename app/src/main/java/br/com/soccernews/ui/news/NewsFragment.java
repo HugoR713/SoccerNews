@@ -1,4 +1,4 @@
-package br.com.soccernews.ui.dashboard;
+package br.com.soccernews.ui.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,23 +9,22 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import br.com.soccernews.databinding.FragmentNewsBinding;
 
-import br.com.soccernews.databinding.FragmentDashboardBinding;
+public class NewsFragment extends Fragment {
 
-public class DashboardFragment extends Fragment {
-
-    private FragmentDashboardBinding binding;
+    private FragmentNewsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        DashboardViewModel dashboardViewModel =
-                new ViewModelProvider(this).get(DashboardViewModel.class);
+        NewsViewModel homeViewModel =
+                new ViewModelProvider(this).get(NewsViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentNewsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textNews;
+        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
